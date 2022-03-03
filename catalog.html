@@ -12,14 +12,14 @@
           <a class="logo_link" href="./index.html">
             <img class="logo" src="./images/svg/logo.svg" width="145" height="36" alt="Интернет магазина Девайс">
           </a>
-          <ul class="navigation_list">
+          <ul class="navigation_list navigation_list_inner">
             <li class="navigation_item">
               <form class="search_form" action="#" method="get">
                 <input class="search_input" type="search" placeholder="Текст поиска">
                 <input class="search_submit" type="submit" value="Найти">
               </form>
             </li>
-            <li class="navigation_item">
+            <li class="navigation_catalog_item_log-in">
               <a class="navigation_link" href="#"><img class="navigation-icon" src="./images/svg/icons_log_in.svg" alt="пользователь">Коля Петухов</a>
             </li>
             <li class="navigation_item">
@@ -29,15 +29,25 @@
               <a class="navigation_link" href="#"><img class="navigation-icon" src="./images/svg/icons_comparison.svg" alt="сравнение товаров">Сравнить</a>
             </li>
             <li class="navigation_item">
-              <a class="navigation_link" href="#"><img class="navigation-icon" src="./images/svg/icons_basket.svg" alt="корзина покупок">Корзина</a>
+              <a class="navigation_link navigation_link_basket" href="#"><img class="navigation-icon" src="./images/svg/icons_basket.svg" alt="корзина покупок">Корзина</a>
             </li>
           </ul>
           <ul class="navigation_catalog_list navigation_catalog_list_inner">
             <li class="navigation_catalog_item">
-              <a class="navigation_catalog_link" href="#">Каталог товаров</a>
-              <button class="catalog-button" type="button">
-              <img class="navigation_catalog_icon" src="./images/svg/catalog_icon.svg" width="50" height="50" alt="Раскрыть каталог товаров">
+              <a class="navigation_catalog_link" href="#">Каталог товаров
+              <button class="catalog_button" type="button">
+                <svg class="navigation-icon" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.3" cx="25" cy="25.3889" r="24" stroke="black" stroke-width="2"/>
+                  <g opacity="0.3" clip-path="url(#clip0_18101_657)">
+                  <path d="M33 24.3889H26V17.3889H24V24.3889H17V26.3889H24V33.3889H26V26.3889H33V24.3889Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_18101_657">
+                  <rect width="16" height="16" fill="white" transform="translate(17 17.3889)"/>
+                  </clipPath>
+                  </defs>
               </button>
+              </a>
             </li>
             <li class="navigation_catalog_item">
               <a class="navigation_catalog_link" href="#">Доставка</a>
@@ -165,9 +175,10 @@
         <section class="filter_results">
           <ul class="filter_results_list">
             <li class="filter_results_item">
-              <a class="filter_results_link">
+              <a class="filter_results_link" href="#">
                 <img class="filter_results_img" src="./images/jpeg/monopod_1.jpg" width="360" height="380" alt="Монопод с камерой">
               </a>
+              <a class="product_card_link" href="#">Подробнее</a>
               <p class="filter_results_description">Любительская
                 селфи-палка
               </p>
@@ -177,6 +188,7 @@
               <a class="filter_results_link">
                 <img class="filter_results_img" src="./images/jpeg/product-2.jpg" width="360" height="380" alt="Монопод с камерой">
               </a>
+              <a class="product_card_link" href="#">Подробнее</a>
               <p class="filter_results_description">Профессиональная селфи-палка</p>
               <b class="filter_results_price">1500 ₽</b>
             </li>
@@ -184,6 +196,7 @@
               <a class="filter_results_link">
                 <img class="filter_results_img" src="./images/jpeg/product-3.jpg" width="360" height="380" alt="Монопод с камерой">
               </a>
+              <a class="product_card_link" href="#">Подробнее</a>
               <p class="filter_results_description">Непотопляемая селфи-палка</p>
               <b class="filter_results_price">2500 ₽</b>
             </li>
@@ -191,6 +204,7 @@
               <a class="filter_results_link">
                 <img class="filter_results_img" src="./images/jpeg/product-4.jpg" width="360" height="380" alt="Монопод с камерой">
               </a>
+              <a class="product_card_link" href="#">Подробнее</a>
               <p class="filter_results_description">Селфи-палка «Следуй за мной»</p>
               <b class="filter_results_price">1500 ₽</b>
             </li>
