@@ -1616,6 +1616,7 @@ body {
 
 .breadcrumbs_list {
   display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   margin-bottom: 35px;
@@ -1623,7 +1624,20 @@ body {
 }
 
 .breadcrumbs_item {
-  margin-right: 16px;
+  position: relative;
+  margin-right: 36px;
+}
+
+.breadcrumbs_item:not(:last-child)::after {
+  position: absolute;
+  top: 13px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background-image: url("../images/svg/breadcrumbs_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
 }
 
 .breadcrumbs_item:last-child {
@@ -1640,16 +1654,16 @@ body {
   color: #000000;
 }
 
-.breadcrumbs_link:hover {
+.breadcrumbs_link:not(.breadcrumbs_link_current):hover {
   opacity: 0.6;
 }
 
-.breadcrumbs_link:focus {
+.breadcrumbs_link:not(.breadcrumbs_link_current):focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
-.breadcrumbs_link:active {
+.breadcrumbs_link:not(.breadcrumbs_link_current):active {
   opacity: 0.3;
   outline: none;
 }
