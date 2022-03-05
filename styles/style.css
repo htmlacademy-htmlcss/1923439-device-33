@@ -2078,8 +2078,11 @@ body {
   opacity: 0.5;
 }
 
+.sorting_button:active {
+  outline: none;
+}
 
-.sorting_arrow_img:active {
+.sorting_button:active .sorting_arrow_img{
   opacity: 1;
   outline: none;
 }
