@@ -491,7 +491,6 @@
             </main>
             <footer class="page_footer">
               <div class="container">
-                k
                 <a class="logo_yellow_link">
                   <svg width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -605,20 +604,26 @@
                   </button>
                   <form class="modal_form" method="post" action="#">
                     <ul class="modal_form_input_list">
+                      <div class="row_wrapper row_wrapper_1">
                       <li class="model_form_input_item">
                         <label class="modal_form_label modal_form_label_name">
                           Ваше имя:
                           <input class="modal_form_input input_name" type="text" value="Введите имя" placeholder="Введите имя" required>
-                          <span class="modal_form_input_notation">Добавьте имя</span>
+
                         </label>
                       </li>
                       <li class="model_form_input_item">
                         <label class="modal_form_label modal_form_label_email">
                           Ваш e-mail:
                           <input class="modal_form_input input_email" type="email" placeholder="почта" required>
-                          <span class="modal_form_input_notation modal_form_input_notation_wrong">Забавный у вас адрес</span>
                         </label>
                       </li>
+                      </div>
+                      <li class="model_form_input_item model_form_input_item_notation">
+                        <span class="modal_form_input_notation">Добавьте имя</span>
+                        <span class="modal_form_input_notation modal_form_input_notation_wrong">Забавный у вас адрес</span>
+                      </li>
+                      <div class="row_wrapper row_wrapper_2">
                       <li class="model_form_input_item">
                         <label class="modal_form_label">
                           Что нужно привезти:
@@ -648,6 +653,7 @@
                             </p>
                           </label>
                         </li>
+                        </div>
                       </ul>
                       <button class="modal_button_submit" type="submit">Отправить</button>
                     </form>
