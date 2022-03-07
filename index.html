@@ -529,5 +529,62 @@
           </div>
         </div>
       </footer>
+      <div class="modal_container">
+        <div class="modal_contant">
+          <h2 class="modal_title">Доставка под заказ</h2>
+          <button class="close_button" type="button">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13
+              15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
+              </svg>
+          </button>
+          <form class="modal_form" method="post" action="#">
+            <ul class="modal_form_input_list">
+              <li class="model_form_input_item">
+                <label class="modal_form_label modal_form_label_name">
+                  Ваше имя:
+                  <input class="modal_form_input" type="text" value="Введите имя" placeholder="Введите имя" required>
+                  <span class="modal_form_input_notation">Добавьте имя</span>
+                </label>
+              </li>
+              <li class="model_form_input_item">
+                <label class="modal_form_label modal_form_label_email">
+                  Ваш e-mail:
+                  <input class="modal_form_input" type="email" placeholder="почта"  required>
+                  <span class="modal_form_input_notation modal_form_input_notation_wrong">Забавный у вас адрес</span>
+                </label>
+              </li>
+              <li class="model_form_input_item">
+                <label class="modal_form_label">
+                  Что нужно привезти:
+                  <input class="modal_form_input modal_form_input_wishes" type="text" value="В свободной форме" placeholder="В свободной форме" required>
+                </label>
+              </li>
+              <li class="model_form_input_item model_form_input_item_counter">
+                <p class="tooltip_wrapper">
+                  <label class="modal_form_label modal_form_label_counter">
+                    Количество:
+                    <button class="modal_tooltip_button"> i
+                      <span class="modal_tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                        к провозу багажа.</span>
+                      <span class="visually_hidden">дополнительные условия доставки</span>
+                    </button>
+                  </p>
+                  <p class="counter_wrapper">
+                    <button class="button_counter button_counter_min" type="button">
+                      <span class="visually_hidden">уменьшите колличество</span>
+                    </button>
+                    <input class="modal_form_input modal_form_input_counter" type="number" placeholder="1" value="1" required>
+                    <button class="button_counter button_counter_max" type="button">
+                      <span class="visually_hidden">увеличте количество</span>
+                    </button>
+                  </p>
+                </label>
+              </li>
+            </ul>
+            <button class="modal_button_submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
   </body>
 </html>
