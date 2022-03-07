@@ -39,7 +39,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
-  width: 100%;
+  width: 1440px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
@@ -59,7 +59,7 @@ body {
 
 .logo_link {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 145px;
 }
 
@@ -641,7 +641,7 @@ body {
 
 .slider_description {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 
@@ -769,26 +769,30 @@ body {
 
 .slider_dl_wrapper {
   display: flex;
+  margin-top: 6px;
 }
 
 .slider_dl {
+  margin: 0;
   margin-right: 20px;
+  margin-bottom: 10px;;
   display: flex;
   flex-direction: column;
 }
 
-.slider_dt {
+.slider_dd {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 30px;
   color: #000000;
-  margin-bottom: 12px;
+  margin: 0;
+  margin-bottom: 15px;
   order: 1;
 }
 
-.slider_dd {
+.slider_dt {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -808,7 +812,7 @@ body {
 }
 
 .catalog_categories {
-  padding-top: 80px;
+  padding-top: 61px;
 }
 
 .catalog_categories_list {
@@ -2054,6 +2058,12 @@ body {
   display: grid;
   grid-template-columns: 320px 1fr;
   grid-template-rows: 70px 1fr;
+  background-color: #F0F0F0;
+  padding-top: 25px;
+  width: 1160px;
+  padding: 25px 140px;
+  padding-bottom: 0;
+  margin: auto;
 }
 
 .filters_navigation_list {
@@ -2086,7 +2096,7 @@ body {
 }
 
 .sorting_arrow_item + .sorting_arrow_item {
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 .sorting_arrow_img {
@@ -2344,11 +2354,19 @@ body {
 }
 
 .pagination {
+  grid-column: 2/3;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
+  padding: 0 40px 78px 40px;
+}
+
+.pagination_wrapper {
+  display: flex;
+  justify-content: space-between;
   background-color: #EBEBEB;
-  margin-bottom: 78px;
+  flex-grow: 1;
 }
 
 .pagination_list {
@@ -2497,6 +2515,8 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 
@@ -2514,12 +2534,6 @@ body {
   width: 360px;
 }
 
-.row_wrapper {
-  display: flex;
-  width: 760px;
-  align-items: flex-end;
-  justify-content: space-between;
-}
 
 .modal_form_label_counter {
   position: relative;
