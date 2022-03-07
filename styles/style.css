@@ -476,12 +476,12 @@ body {
   background-image: url("../images/svg/plus_catalog.svg");
   background-repeat: no-repeat;
   background-position: left 48% top 47%;
-  z-index: 3;
 }
 
 .navigation_catalog_link:hover {
   opacity: 0.6;
   text-decoration: underline;
+  z-index: 3;
 }
 
 .navigation_catalog_link:focus {
@@ -506,7 +506,6 @@ body {
 .navigation_catalog_link_popover {
   position: relative;
   padding-right: 60px;
-  z-index: 3;
 }
 
 .popover_catalog_list {
@@ -589,7 +588,6 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 1;
 }
 
 .slider_button:hover {
@@ -617,7 +615,6 @@ body {
   z-index: 0;
   top: 80px;
   right: 52px;
-  z-index: 0;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -753,7 +750,7 @@ body {
 
 .slider_link:active {
   background: #FFCC33;
-  outline:none;
+  outline: none;
 }
 
 .slider_link:disabled {
@@ -2156,7 +2153,6 @@ body {
 .filter_results_img {
   display: block;
   position: relative;
-  z-index: 10;
 }
 
 .filter_results_link_new::before {
@@ -2175,7 +2171,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   content: "";
-  z-index: 11;
+  z-index: 1;
 }
 
 
@@ -2236,7 +2232,7 @@ body {
 
 
 .filter_results_link:hover  .hover_link_container {
-  z-index: 12;
+  z-index: 1;
 }
 
 .filter_results_link:hover + .hover_description_wrapper {
@@ -2438,10 +2434,6 @@ body {
   z-index: 3;
 }
 
-.modal_close {
-  display: none;
-}
-
 .modal_contant {
   position: relative;
   width: 940px;
@@ -2457,6 +2449,9 @@ body {
   align-items: flex-start;
 }
 
+.modal_close {
+  display: none;
+}
 
 .modal_title {
   font-family: "Raleway", sans-serif;
@@ -2519,6 +2514,7 @@ body {
   color: #000000;
   display: flex;
   flex-direction: column;
+  width: 360px;
 }
 
 .modal_form_label_name::before {
@@ -2638,7 +2634,7 @@ body {
 .modal_tooltip_button {
   position: absolute;
   top: -2px;
-  right: -37px;
+  right: 30px;
   width: 26px;
   height: 26px;
   border: none;
@@ -2744,7 +2740,7 @@ body {
   color: #000000;
   width: 200px;
   min-height: 40px;
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff 36%, #FFE17F 36%, #FFE17F 55%, #ffffff 55%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 38%, #FFE17F 38%, #FFE17F 55%, #ffffff 55%, #ffffff 100%);
   border: none;
   padding: 0 10px;
   cursor: pointer;
