@@ -472,7 +472,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation_catalog_link_popover::after {
@@ -633,7 +633,17 @@ body {
 .slider_item {
   display: flex;
   justify-content: space-between;
+}
 
+.slider_1,
+.slider_2,
+.slider_3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_off {
+  display: none;
 }
 
 .slider_number {
@@ -832,13 +842,6 @@ body {
   order: 2;
 }
 
-.slider_next {
-  display: none;
-}
-
-.slider_previus {
-  display: none;
-}
 
 .catalog_categories {
   padding-top: 61px;
