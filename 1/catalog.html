@@ -33,7 +33,7 @@
         </svg>
       </a>
       <ul class="navigation_list navigation_list_inner">
-        <li class="navigation_item">
+        <li class="navigation_item navigation_item_inner">
           <form class="search_form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="search_input_label">
               <span class="visually_hidden">введите то что ищите</span>
@@ -66,7 +66,7 @@
       <li class="navigation_item">
         <a class="navigation_link navigation_link_log_out" href="#">Выйти</a>
       </li>
-      <li class="navigation_item">
+      <li class="navigation_item navigation_item_different">
         <a class="navigation_link" href="#">
           <svg class="navigation-icon" width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_18101_635)">
@@ -97,7 +97,7 @@
             </svg>
           Корзина
         </a>
-        <div class="popover_basket">
+        <div class="popover_basket popover_basket_off">
           <ul class="basket_list">
             <li class="basket_item">
               <a class="basket_item_link" href="#">
@@ -130,7 +130,7 @@
           <ul class="navigation_catalog_list navigation_catalog_list_inner">
             <li class="navigation_catalog_item">
               <a class="navigation_catalog_link navigation_catalog_link_popover" href="#">Каталог товаров</a>
-              <div class="popover_catalog_list">
+              <div class="popover_catalog_list popover_catalog_off">
                 <ul class="popover_catalog_list_inside">
                   <li class="popover_catalog_item_inside">
                     <a class="popover_catalog_link" href="#">Виртуальная реальность</a>
@@ -168,24 +168,24 @@
             </ul>
           </nav>
         </div>
-        <section class="breadcrumbs">
-          <div class="glass_wrapper">
-            <h2 class="breadcrumbs_title">Моноподы для селфи</h2>
-            <ol class="breadcrumbs_list">
-              <li class="breadcrumbs_item">
-                <a class="breadcrumbs_link" href="./index.html" target="blanck">Главная</a>
-              </li>
-              <li class="breadcrumbs_item">
-                <a class="breadcrumbs_link" href="#">Каталог товаров</a>
-              </li>
-              <li class="breadcrumbs_item">
-                <a class="breadcrumbs_link breadcrumbs_link_current">Моноподы для селфи</a>
-              </li>
-            </ol>
-          </div>
-        </section>
       </header>
       <main class="main_inner">
+          <section class="breadcrumbs">
+            <div class="glass_wrapper">
+              <h2 class="breadcrumbs_title">Моноподы для селфи</h2>
+              <ol class="breadcrumbs_list">
+                <li class="breadcrumbs_item">
+                  <a class="breadcrumbs_link" href="./index.html" target="blanck">Главная</a>
+                </li>
+                <li class="breadcrumbs_item">
+                  <a class="breadcrumbs_link" href="#">Каталог товаров</a>
+                </li>
+                <li class="breadcrumbs_item">
+                  <a class="breadcrumbs_link breadcrumbs_link_current">Моноподы для селфи</a>
+                </li>
+              </ol>
+            </div>
+          </section>
         <div class="filter_grid_container">
           <form class="filter_form" action="https://echo.htmlacademy.ru/" method="post">
             <ul class="filter_group_list">
@@ -194,7 +194,7 @@
                   <legend class="fieldset_legend">Стоимость</legend>
                   <div class="range_control">
                     <div class="range_line">
-                      <div class="range_scale">
+                      <div class="range_scale" style="left: 0; width: 119px;">
                         <span class="visually_hidden">Выберете цену</span>
                         <div class="button_price_wrapper button_price_wrapper_min">
                           <button class="range_button range_button_min" type="button">
@@ -252,7 +252,7 @@
               <li class="filter_group_item">
                 <fieldset class="fieldset_group">
                   <legend class="fieldset_legend">Bluetooth</legend>
-                  <label class="filter_label">
+                  <label class="filter_label  filter_label_different">
                     <input class="filter_input visually_hidden" name="Bluetooth" type="radio" value="yes" checked>
                     <span class="control_mark"></span>
                     Есть
@@ -260,7 +260,7 @@
                   <label class="filter_label">
                     <input class="filter_input visually_hidden" name="Bluetooth" type="radio" value="no">
                     <span class="control_mark"></span>
-                    Нету
+                    Нет
                   </label>
                 </fieldset>
               </li>
@@ -324,7 +324,7 @@
               </div>
             </div>
             <div class="hover_description_wrapper">
-              <p class="filter_results_description">Любительская
+              <p class="filter_results_description">Любительская<br>
                 селфи-палка
               </p>
               <b class="filter_results_price">500 ₽</b>
@@ -386,13 +386,10 @@
               <a class="pagination_link" href="#">3</a>
             </li>
             <li class="pagination_item">
-              <a class="pagination_link" href="#">4</a>
-            </li>
-            <li class="pagination_item">
               <a class="pagination_link" href="#">...</a>
             </li>
-            <li class="pagination_item">
-              <a class="pagination_link" href="#">15</a>
+            <li class="pagination_item pagination_item_last">
+              <a class="pagination_link pagination_link_last" href="#">15</a>
             </li>
           </ol>
           <a class="pagination_button" href="#">вперёд</a>
@@ -504,5 +501,6 @@
       </div>
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>
