@@ -9,6 +9,18 @@ var button_garanty = document.querySelector('.garanty_link');
 var garanty_card = document.querySelector('.garanty_card');
 var button_credit = document.querySelector('.credit_link');
 var credit_card = document.querySelector('.credit_card');
+var modal_delivery = document.querySelector('.modal_close');
+var button_modal = document.querySelector('.delivery_article_description');
+var button_modal_close = document.querySelector('.close_button');
+var slider_button_next = document.querySelector('.slider_button_next');
+var slider_button_prev = document.querySelector('.slider_button_previos');
+var slider_1 = document.querySelector('.slider_1');
+var slider_2 = document.querySelector('.slider_2');
+var slider_3 = document.querySelector('.slider_3');
+
+
+
+
 button_catalog.addEventListener('click', function() {
   popover_catalog.classList.toggle('popover_catalog_off');
 });
@@ -25,9 +37,6 @@ button_delivery.addEventListener('click', function() {
   garanty_card.classList.add('delivery_description_none');
   credit_card.classList.add('delivery_description_none');
   delivery_card.classList.remove('delivery_description_none');
-
-
-
 });
 
 button_garanty.addEventListener('click', function() {
@@ -38,9 +47,6 @@ button_garanty.addEventListener('click', function() {
   credit_card.classList.add('delivery_description_none');
   delivery_card.classList.add('delivery_description_none');
   garanty_card.classList.remove('delivery_description_none');
-
-
-
 });
 
 button_credit.addEventListener('click', function() {
@@ -51,6 +57,17 @@ button_credit.addEventListener('click', function() {
   delivery_card.classList.add('delivery_description_none');
   garanty_card.classList.add('delivery_description_none');
   credit_card.classList.remove('delivery_description_none');
-
-
 });
+
+button_modal.addEventListener('click', function() {
+  modal_delivery.classList.toggle('modal_close')
+});
+
+button_modal_close.addEventListener('click', function() {
+  modal_delivery.classList.toggle('modal_close')
+});
+
+
+
+
+
