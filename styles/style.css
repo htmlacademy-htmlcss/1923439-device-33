@@ -57,7 +57,6 @@ body {
 
 .container {
   width: 1160px;
-  padding: 0 140px;
   margin: auto;
 }
 
@@ -503,24 +502,6 @@ body {
   z-index: 1;
 }
 
-.navigation_catalog_link_popover_open::after {
-  position: absolute;
-  right: -8px;
-  top: -15px;
-  width: 51px;
-  height: 51px;
-  border-radius: 50%;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-  opacity: 0.3;
-  content: "";
-  background-image: url("../images/svg/popover_minus.svg");
-  background-repeat: no-repeat;
-  background-position: left 48% top 47%;
-  z-index: 1;
-}
-
-
 
 .navigation_catalog_link:hover {
   opacity: 0.6;
@@ -540,6 +521,7 @@ body {
   outline: 2px solid #AF4FFF;
   outline-offset: 18px;
 }
+
 
 .navigation_catalog_link:active {
   opacity: 0.3;
@@ -2082,7 +2064,7 @@ body {
 
 .button_price_wrapper_min {
   top: 1px;
-  left: -1px;
+  left: -2px;
 }
 
 .button_price_wrapper_max {
@@ -2091,6 +2073,9 @@ body {
 }
 
 .label_range_price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
   position: absolute;
   top: 15px;
   font-family: "Rubik", sans-serif;
@@ -2104,11 +2089,23 @@ body {
 }
 
 .label_range_price_min {
-  left: -25px;
+  left: -9px;
+  width: 45px;
+}
+
+.label_range_price_min:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .label_range_price_max {
-  right: -25px;
+  right: -29px;
+  width: 59px;
+}
+
+.label_range_price_max:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .label_range_price_text {
@@ -2116,18 +2113,17 @@ body {
 }
 
 .text_min {
-  top: 1px;
-  left: 11px;
+  top: 0;
+  left: -2px;
 }
 
 .text_max {
-  top: 1px;
-  right: 49px;
+  top: 0;
+  right: 42px;
 }
 
 
 .filter_input_price {
-  width: 50px;
   border: none;
   background-color: transparent;
   font-family: "Rubik", sans-serif;
@@ -2137,7 +2133,19 @@ body {
   line-height: 18px;
   text-align: center;
   color: #000000;
-  padding-left: 13px;
+  box-sizing: border-box;
+}
+
+.input_price_min {
+  padding: 0;
+  text-align: start;
+  width: 29px;
+}
+
+.input_price_max {
+  padding: 0;
+  text-align: start;
+  width: 37px;
 }
 
 .filter_input_price::-webkit-outer-spin-button,
@@ -2147,8 +2155,7 @@ body {
 
 
 .filter_input_price:focus {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+  outline: none;
 }
 
 .submite_button {
@@ -2347,7 +2354,6 @@ body {
 
 .hover_link {
   position: absolute;
-  position: absolute;
   font-family: "Raleway",sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -2373,13 +2379,17 @@ body {
   grid-template-columns: 207px 150px;
 }
 
+.hover_link:focus {
+  outline: none;
+}
+
 .hover_link:active {
   background-image: linear-gradient(to bottom, transparent, transparent 40%, #FFC700 40%, #FFC700 57%, transparent 57%, transparent 100%);
   outline: none;
 }
 
-.hover_link:focus {
-  outline: none;
+.hover_link:hover {
+  background: #FFE17F;
 }
 
 
