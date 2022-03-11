@@ -503,6 +503,25 @@ body {
   z-index: 1;
 }
 
+.navigation_catalog_link_popover_open::after {
+  position: absolute;
+  right: -8px;
+  top: -15px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  opacity: 0.3;
+  content: "";
+  background-image: url("../images/svg/popover_minus.svg");
+  background-repeat: no-repeat;
+  background-position: left 48% top 47%;
+  z-index: 1;
+}
+
+
+
 .navigation_catalog_link:hover {
   opacity: 0.6;
   text-decoration: underline;
